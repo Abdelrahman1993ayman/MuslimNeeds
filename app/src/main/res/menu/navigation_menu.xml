@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/prayerTimes"
+        android:title="@string/prayerTimes"
+        android:icon="@drawable/ic_access_time_black_24dp">
+    </item>
+
+    <item android:id="@+id/setting"
+        android:title="@string/settings"
+        android:icon="@drawable/ic_settings_applications_black_24dp">
+    </item>
+
+    <item android:id="@+id/shareApp"
+        android:title="@string/shareApp"
+        android:icon="@drawable/ic_share_black_24dp">
+    </item>
+
+    <item android:id="@+id/rateUs"
+        android:title="@string/rateUs"
+        android:icon="@drawable/ic_star_black_24dp">
+    </item>
+
+    <item android:id="@+id/about"
+        android:title="@string/about"
+        android:icon="@drawable/ic_about_black_24dp">
+    </item>
+
+
+</menu>

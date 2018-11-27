@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainMenu.SalahMenu">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:paddingBottom="20dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorAccent"
+                android:layout_margin="5dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_button"
+                    android:layout_margin="5dp"
+                    android:onClick="ShrotElsalah"
+                    android:text="@string/shrotElsalah"
+                    android:textSize="30sp"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_button"
+                    android:layout_margin="5dp"
+                    android:onClick="SefatElsalah"
+                    android:text="@string/sefatElsalah"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_button"
+                    android:layout_margin="5dp"
+                    android:onClick="Elfra2d"
+                    android:text="@string/elfra2d"
+                    android:textSize="30sp"
+                    android:textStyle="bold"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_button"
+                    android:layout_margin="5dp"
+                    android:onClick="AwqatElsalah"
+                    android:text="@string/awqatElsalah"
+                    android:textSize="30sp"
+                    android:textStyle="bold"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_button"
+                    android:layout_margin="5dp"
+                    android:onClick="ElsonanWElnwafl"
+                    android:text="@string/elsonanWelnwafl"
+                    android:textSize="30sp"
+                    android:textStyle="bold"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_button"
+                    android:layout_margin="5dp"
+                    android:onClick="Elgom3a"
+                    android:text="@string/elgom3a"
+                    android:textSize="30sp"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
