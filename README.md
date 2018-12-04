@@ -1,6 +1,7 @@
-# MuslimNeeds
-some feature almost done :
-  1- wdo2 steps .
-  2- support english and arabic but translation need some modifications .
-  3. make prayerTimes using volley for web service but need some modifications  .
-  
+1- Add new feature : Azan .
+2- Fix some bugs .
+3- Add new languages : English - German - French .
+4- Add new method to get PrayerTimes .
+5- Edit design .
+
+Next feature : Adding Qibla .
