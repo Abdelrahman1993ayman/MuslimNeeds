@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import com.example.abdelrahmanayman.muslimneeds.R;
+import com.example.abdelrahmanayman.muslimneeds.Utilities;
 
 public class Wdo2Details extends AppCompatActivity {
 
@@ -25,13 +26,11 @@ public class Wdo2Details extends AppCompatActivity {
 
         ActionBar actionBar;
         actionBar = getSupportActionBar();
-        if (actionBar != null) {
-            // enabling action bar app icon and behaving it as toggle button
-            actionBar.setIcon(R.drawable.logoicon);
-            actionBar.setHomeButtonEnabled(true);
-            actionBar.setDisplayShowHomeEnabled(true);
-            actionBar.setTitle(R.string.elwdo2);
-        }
-
+        Utilities.actionBar(R.string.elwdo2 , actionBar);
+    }
+    @Override
+    public boolean onSupportNavigateUp(){
+        finish();
+        return true;
     }
 }

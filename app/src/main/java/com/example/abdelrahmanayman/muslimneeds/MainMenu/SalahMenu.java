@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.abdelrahmanayman.muslimneeds.R;
+import com.example.abdelrahmanayman.muslimneeds.Utilities;
 
 public class SalahMenu extends AppCompatActivity {
 
@@ -17,15 +18,7 @@ public class SalahMenu extends AppCompatActivity {
         // ActionBar Setup
         ActionBar actionBar;
         actionBar = getSupportActionBar();
-        if (actionBar != null) {
-            // enabling action bar app icon and behaving it as toggle button
-            actionBar.setIcon(R.drawable.logoicon);
-            actionBar.setHomeButtonEnabled(true);
-            actionBar.setDisplayShowHomeEnabled(true);
-            actionBar.setTitle(R.string.salah);
-        }
-
-
+        Utilities.actionBar(R.string.salah, actionBar);
     }
 
     public void ShrotElsalah(View view) {
@@ -46,5 +39,11 @@ public class SalahMenu extends AppCompatActivity {
 
     public void Elgom3a(View view) {
 
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 }

@@ -32,20 +32,14 @@ public class MainActivity extends AppCompatActivity {
         // actionBar Setup
         ActionBar actionBar;
         actionBar = getSupportActionBar();
-        if (actionBar != null) {
-            // enabling action bar app icon and behaving it as toggle button
-            actionBar.setIcon(R.drawable.logoicon);
-            actionBar.setHomeButtonEnabled(true);
-            actionBar.setDisplayShowHomeEnabled(true);
-            actionBar.setTitle(R.string.main);
-        }
+        Utilities.actionBar(R.string.main, actionBar);
 
         // NavigationDrawer setup
         drawerLayout = findViewById(R.id.drawer1);
         actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.app_name, R.string.app_name);
         actionBarDrawerToggle.setDrawerIndicatorEnabled(true);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.syncState();
         NavigationView navigationView = findViewById(R.id.nav_view);
@@ -57,13 +51,12 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(new Intent(MainActivity.this, Settings.class));
                 } else if (id == R.id.prayerTimes) {
                     startActivity(new Intent(MainActivity.this, PrayerTimes.class));
-                }else if (id == R.id.shareApp) {
-
-                }else if (id == R.id.rateUs) {
-
-                }
-                else {
-
+                } else if (id == R.id.shareApp) {
+                    // when app is available on google play store
+                } else if (id == R.id.rateUs) {
+                    // when app is available on google play store
+                } else if (id == R.id.about) {
+                    // when app is available on google play store
                 }
                 return true;
             }

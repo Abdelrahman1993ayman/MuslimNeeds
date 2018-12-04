@@ -18,6 +18,17 @@
                                 <PersistentState>
                                   <option name="children">
                                     <map>
+                                      <entry key="foregroundImage">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="scalingPercent" value="59" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
                                       <entry key="foregroundText">
                                         <value>
                                           <PersistentState>
@@ -46,10 +57,11 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundLayerName" value="wdo2Btnf" />
-                                      <entry key="foregroundAssetType" value="TEXT" />
-                                      <entry key="foregroundLayerName" value="wdo2Btn" />
-                                      <entry key="outputName" value="Wdo2Btn" />
+                                      <entry key="backgroundColor" value="00d2bb" />
+                                      <entry key="foregroundImage" value="C:\Users\Abdelrahman Ayman\Downloads\الوضوء و الصلاة\New folder\islamicmosque_icon.png" />
+                                      <entry key="outputName" value="logo_launcher" />
+                                      <entry key="previewDensity" value="XXXHIGH" />
+                                      <entry key="showSafeZone" value="false" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -76,18 +88,14 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="iconShape" value="NONE" />
-                                      <entry key="imageAsset" value="C:\Users\Abdelrahman Ayman\Downloads\الوضوء و الصلاة\res\mipmap-xxxhdpi\logoicon.png" />
+                                      <entry key="cropped" value="true" />
+                                      <entry key="imageAsset" value="C:\Users\Abdelrahman Ayman\Downloads\res\mipmap-xxxhdpi\logonew.png" />
+                                      <entry key="outputName" value="newlogoicon" />
                                     </map>
                                   </option>
                                 </PersistentState>
                               </value>
                             </entry>
-                          </map>
-                        </option>
-                        <option name="values">
-                          <map>
-                            <entry key="outputIconType" value="LAUNCHER_LEGACY" />
                           </map>
                         </option>
                       </PersistentState>
@@ -113,7 +121,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/device/ic_access_time_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/navigation/ic_refresh_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -123,7 +131,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_access_time_black_24dp" />
+                            <entry key="color" value="ffffff" />
+                            <entry key="outputName" value="ic_refresh_black_24dp" />
                             <entry key="sourceFile" value="C:\Users\Abdelrahman Ayman" />
                           </map>
                         </option>

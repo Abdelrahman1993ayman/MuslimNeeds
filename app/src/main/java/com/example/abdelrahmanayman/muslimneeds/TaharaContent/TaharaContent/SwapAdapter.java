@@ -13,7 +13,7 @@ import com.example.abdelrahmanayman.muslimneeds.R;
 public class SwapAdapter extends FragmentStatePagerAdapter {
 
     private Context context;
-
+    private Fragment fragment ;
     public SwapAdapter(FragmentManager fm, Context context) {
         super(fm);
         this.context = context;
@@ -22,66 +22,31 @@ public class SwapAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        Fragment fragment = new FragmentPage();
-        Wdo2DetailsModel wdo2obj;
-        Bitmap bMap;
-        Bundle bundle;
+            fragment= new FragmentPage();
         switch (position) {
             case 0:
-                bMap = BitmapFactory.decodeResource(context.getResources(), R.drawable.wdo2_1);
-                wdo2obj = new Wdo2DetailsModel(context.getString(R.string.wdo2details1), bMap, context.getString(R.string.wdo2details1Tips));
-                bundle = new Bundle();
-                bundle.putParcelable("details", wdo2obj);
-                fragment.setArguments(bundle);
+              SetFragment(R.drawable.wdo2_1 , R.string.wdo2details1 , R.string.wdo2details1Tips  );
                 break;
             case 1:
-                bMap = BitmapFactory.decodeResource(context.getResources(), R.drawable.wdo2_2);
-                wdo2obj = new Wdo2DetailsModel(context.getString(R.string.wdo2details2), bMap, context.getString(R.string.wdo2details2Tips));
-                bundle = new Bundle();
-                bundle.putParcelable("details", wdo2obj);
-                fragment.setArguments(bundle);
+                SetFragment(R.drawable.wdo2_2 , R.string.wdo2details2 , R.string.wdo2details2Tips  );
                 break;
             case 2:
-                bMap = BitmapFactory.decodeResource(context.getResources(), R.drawable.wdo2_3);
-                wdo2obj = new Wdo2DetailsModel(context.getString(R.string.wdo2details3), bMap, context.getString(R.string.wdo2details3Tips));
-                bundle = new Bundle();
-                bundle.putParcelable("details", wdo2obj);
-                fragment.setArguments(bundle);
+                SetFragment(R.drawable.wdo2_3 , R.string.wdo2details3 , R.string.wdo2details3Tips );
                 break;
             case 3:
-                bMap = BitmapFactory.decodeResource(context.getResources(), R.drawable.wdo2_4);
-                wdo2obj = new Wdo2DetailsModel(context.getString(R.string.wdo2details4), bMap, context.getString(R.string.wdo2details4Tips));
-                bundle = new Bundle();
-                bundle.putParcelable("details", wdo2obj);
-                fragment.setArguments(bundle);
+                SetFragment(R.drawable.wdo2_4 , R.string.wdo2details4 , R.string.wdo2details4Tips  );
                 break;
             case 4:
-                bMap = BitmapFactory.decodeResource(context.getResources(), R.drawable.wdo2_5);
-                wdo2obj = new Wdo2DetailsModel(context.getString(R.string.wdo2details5), bMap, context.getString(R.string.wdo2details5Tips));
-                bundle = new Bundle();
-                bundle.putParcelable("details", wdo2obj);
-                fragment.setArguments(bundle);
+                SetFragment(R.drawable.wdo2_5 , R.string.wdo2details5 , R.string.wdo2details5Tips  );
                 break;
             case 5:
-                bMap = BitmapFactory.decodeResource(context.getResources(), R.drawable.wdo2_6);
-                wdo2obj = new Wdo2DetailsModel(context.getString(R.string.wdo2details6), bMap, context.getString(R.string.wdo2details6Tips));
-                bundle = new Bundle();
-                bundle.putParcelable("details", wdo2obj);
-                fragment.setArguments(bundle);
+                SetFragment(R.drawable.wdo2_6 , R.string.wdo2details6 , R.string.wdo2details6Tips  );
                 break;
             case 6:
-                bMap = BitmapFactory.decodeResource(context.getResources(), R.drawable.wdo2_6);
-                wdo2obj = new Wdo2DetailsModel(context.getString(R.string.wdo2details7), bMap, context.getString(R.string.wdo2details7Tips));
-                bundle = new Bundle();
-                bundle.putParcelable("details", wdo2obj);
-                fragment.setArguments(bundle);
+               SetFragment(R.drawable.wdo2_6 , R.string.wdo2details7 , R.string.wdo2details7Tips);
                 break;
             case 7:
-                bMap = BitmapFactory.decodeResource(context.getResources(), R.drawable.wdo2_8);
-                wdo2obj = new Wdo2DetailsModel(context.getString(R.string.wdo2details8), bMap, context.getString(R.string.wdo2details8Tips));
-                bundle = new Bundle();
-                bundle.putParcelable("details", wdo2obj);
-                fragment.setArguments(bundle);
+                SetFragment(R.drawable.wdo2_8 , R.string.wdo2details8 , R.string.wdo2details8Tips  );
                 break;
         }
         return fragment;
@@ -90,5 +55,17 @@ public class SwapAdapter extends FragmentStatePagerAdapter {
     @Override
     public int getCount() {
         return 8;
+    }
+
+    private void SetFragment (int iconImage ,int detailsName , int detailsName1  ){
+
+        Wdo2DetailsModel wdo2obj;
+        Bitmap bMap;
+        Bundle bundle;
+        bMap = BitmapFactory.decodeResource(context.getResources(),iconImage);
+        wdo2obj = new Wdo2DetailsModel(context.getString(detailsName), bMap, context.getString(detailsName1));
+        bundle = new Bundle();
+        bundle.putParcelable("details", wdo2obj);
+        fragment.setArguments(bundle);
     }
 }

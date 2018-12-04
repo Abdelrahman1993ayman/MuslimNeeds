@@ -1,305 +1,201 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PrayerTimesContent.PrayerTimes"
-    android:background="@drawable/background">
+    android:background="@drawable/appbackground"
+    tools:context=".PrayerTimesContent.PrayerTimes">
 
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        android:padding="5dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="@color/colorAccent"
-                android:layout_margin="10dp"
-                android:padding="5dp">
+        <android.support.v7.widget.CardView style="@style/customCardView">
 
+            <LinearLayout style="@style/CustomLinearLayoutMainMenu">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                <LinearLayout style="@style/CustomLinearLayoutPrayerTimes">
 
-                <EditText
-                    android:id="@+id/searchLocationET"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/searchLocation"
-                    android:layout_margin="5dp"
-                    android:layout_weight="1"
-                    />
-                <Button
-                    android:id="@+id/searchBtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/search"
-                    android:background="@drawable/round_button"
-                    android:layout_margin="5dp"/>
+                    <EditText
+                        android:id="@+id/searchLocationET"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:hint="@string/searchLocation"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true" />
 
-            </LinearLayout>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/white"
-                    />
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/searchBtn"
+                        style="@style/customButton"
+                        android:background="@drawable/round_button"
+                        android:text="@string/search" />
+
+                </LinearLayout>
+
+                <View style="@style/CustomLine" />
+
+                <LinearLayout style="@style/CustomLinearLayoutPrayerTimes">
 
                     <TextView
                         android:id="@+id/locationTV"
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:text="@string/location"
-                        android:textSize="25sp"
-                        android:textColor="@color/white"
-                        android:gravity="end"
-                        />
+                        style="@style/CustomTextViewPrayerTimes"
+                        android:gravity="center"
+                        android:text="@string/location" />
+
                     <TextView
                         android:id="@+id/location"
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:text="@string/location"
-                        android:textSize="25sp"
-                        android:textColor="@color/white"
-                        android:gravity="start"
-                        />
+                        style="@style/CustomTextViewPrayerTimes"
+                        android:gravity="center"
+                        android:text="@string/location" />
                 </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+
+                <View style="@style/CustomLine" />
+
+                <LinearLayout style="@style/CustomLinearLayoutPrayerTimes">
 
                     <TextView
                         android:id="@+id/dateTV"
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:text="@string/date"
-                        android:textSize="25sp"
-                        android:textColor="@color/white"
-                        android:gravity="end"
-                        />
+                        style="@style/CustomTextViewPrayerTimes"
+                        android:gravity="center"
+                        android:text="@string/date" />
+
                     <TextView
                         android:id="@+id/date"
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:text="@string/date"
-                        android:textSize="25sp"
-                        android:textColor="@color/white"
-                        android:gravity="start"
-                        />
+                        style="@style/CustomTextViewPrayerTimes"
+                        android:gravity="center"
+                        android:text="@string/date" />
                 </LinearLayout>
+
+                <View style="@style/CustomLine" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="@string/prayerTimes"
                     android:textColor="@color/white"
                     android:textSize="30sp"
-                    android:textStyle="bold"
-                    android:gravity="center"/>
-
+                    android:textStyle="bold" />
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    style="@style/CustomLinearLayoutPrayerTimes"
+                    android:background="@color/background">
 
-                <TextView
-                    android:id="@+id/elfajrTV"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="@string/elfajr"
-                    android:textSize="25sp"
-                    android:textColor="@color/white"
-                    android:gravity="end"
-                    />
-                <TextView
-                    android:id="@+id/elfajrTimeTV"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="@string/elfajr"
-                    android:textSize="25sp"
-                    android:textColor="@color/white"
-                    android:gravity="start"
-                    />
+                    <TextView
+                        android:id="@+id/elfajrTV"
+                        style="@style/CustomTextViewPrayerTimes"
+                        android:gravity="center"
+                        android:text="@string/elfajr"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/elfajrTimeTV"
+                        style="@style/CustomTextViewPrayerTimes"
+                        android:gravity="center"
+                        android:text="@string/elfajr"
+                        android:textColor="@color/black" />
                 </LinearLayout>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/white"
-                    />
 
+                <View style="@style/CustomLine" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                <LinearLayout style="@style/CustomLinearLayoutPrayerTimes">
 
                     <TextView
                         android:id="@+id/elshroqTV"
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:text="@string/elshroq"
-                        android:textSize="25sp"
-                        android:textColor="@color/white"
-                        android:gravity="end"
-                        />
+                        style="@style/CustomTextViewPrayerTimes"
+                        android:gravity="center"
+                        android:text="@string/elshroq" />
+
                     <TextView
                         android:id="@+id/elshroqTimeTV"
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:text="@string/elshroq"
-                        android:textSize="25sp"
-                        android:textColor="@color/white"
-                        android:gravity="start"
-                        />
+                        style="@style/CustomTextViewPrayerTimes"
+                        android:gravity="center"
+                        android:text="@string/elshroq" />
                 </LinearLayout>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/white"
-                    />
+
+                <View style="@style/CustomLine" />
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    style="@style/CustomLinearLayoutPrayerTimes"
+                    android:background="@color/background">
 
                     <TextView
                         android:id="@+id/eldhuhrTV"
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        style="@style/CustomTextViewPrayerTimes"
+                        android:gravity="center"
                         android:text="@string/eldhuhr"
-                        android:textSize="25sp"
-                        android:textColor="@color/white"
-                        android:gravity="end"
-                        />
+                        android:textColor="@color/black" />
+
                     <TextView
                         android:id="@+id/eldhuhrTimeTV"
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        style="@style/CustomTextViewPrayerTimes"
+                        android:gravity="center"
                         android:text="@string/eldhuhr"
-                        android:textSize="25sp"
-                        android:textColor="@color/white"
-                        android:gravity="start"
-                        />
+                        android:textColor="@color/black" />
                 </LinearLayout>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/white"
-                    />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                <View style="@style/CustomLine" />
+
+                <LinearLayout style="@style/CustomLinearLayoutPrayerTimes">
 
                     <TextView
                         android:id="@+id/elasrTV"
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:text="@string/elasr"
-                        android:textSize="25sp"
-                        android:textColor="@color/white"
-                        android:gravity="end"
-                        />
+                        style="@style/CustomTextViewPrayerTimes"
+                        android:gravity="center"
+                        android:text="@string/elasr" />
+
                     <TextView
                         android:id="@+id/elasrTimeTV"
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:text="@string/elasr"
-                        android:textSize="25sp"
-                        android:textColor="@color/white"
-                        android:gravity="start"
-                        />
+                        style="@style/CustomTextViewPrayerTimes"
+                        android:gravity="center"
+                        android:text="@string/elasr" />
                 </LinearLayout>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/white"
-                    />
+
+                <View style="@style/CustomLine" />
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    style="@style/CustomLinearLayoutPrayerTimes"
+                    android:background="@color/background">
 
                     <TextView
                         android:id="@+id/elmaghribTV"
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        style="@style/CustomTextViewPrayerTimes"
+                        android:gravity="center"
                         android:text="@string/elmaghrib"
-                        android:textSize="25sp"
-                        android:textColor="@color/white"
-                        android:gravity="end"
-                        />
+                        android:textColor="@color/black" />
+
                     <TextView
                         android:id="@+id/elmaghribTimeTV"
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        style="@style/CustomTextViewPrayerTimes"
+                        android:gravity="center"
                         android:text="@string/elmaghrib"
-                        android:textSize="25sp"
-                        android:textColor="@color/white"
-                        android:gravity="start"
-                        />
+                        android:textColor="@color/black" />
                 </LinearLayout>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/white"
-                    />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                <View style="@style/CustomLine" />
+
+                <LinearLayout style="@style/CustomLinearLayoutPrayerTimes">
 
                     <TextView
                         android:id="@+id/elishaTV"
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:text="@string/elisha"
-                        android:textSize="25sp"
-                        android:textColor="@color/white"
-                        android:gravity="end"
-                        />
+                        style="@style/CustomTextViewPrayerTimes"
+                        android:gravity="center"
+                        android:text="@string/elisha" />
+
                     <TextView
                         android:id="@+id/elishaTimeTV"
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:text="@string/elisha"
-                        android:textSize="25sp"
-                        android:textColor="@color/white"
-                        android:gravity="start"
-                        />
+                        style="@style/CustomTextViewPrayerTimes"
+                        android:gravity="center"
+                        android:text="@string/elisha" />
                 </LinearLayout>
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
-
+    </LinearLayout>
 </ScrollView>

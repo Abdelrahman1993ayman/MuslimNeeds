@@ -4,11 +4,14 @@ import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 
 import com.example.abdelrahmanayman.muslimneeds.TaharaContent.TaharaContent.GhoslDetails;
 import com.example.abdelrahmanayman.muslimneeds.R;
 import com.example.abdelrahmanayman.muslimneeds.TaharaContent.TaharaContent.Wdo2Details;
+import com.example.abdelrahmanayman.muslimneeds.Utilities;
+
 
 public class TaharaMenu extends AppCompatActivity {
 
@@ -19,13 +22,7 @@ public class TaharaMenu extends AppCompatActivity {
         //ActionBar Setup
         ActionBar actionBar;
         actionBar = getSupportActionBar();
-        if (actionBar != null) {
-            // enabling action bar app icon and behaving it as toggle button
-            actionBar.setIcon(R.drawable.logoicon);
-            actionBar.setHomeButtonEnabled(true);
-            actionBar.setDisplayShowHomeEnabled(true);
-            actionBar.setTitle(R.string.tahara);
-        }
+        Utilities.actionBar(R.string.tahara, actionBar);
     }
 
 
@@ -35,5 +32,11 @@ public class TaharaMenu extends AppCompatActivity {
 
     public void ghoslDetails(View view) {
         startActivity(new Intent(TaharaMenu.this, GhoslDetails.class));
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 }

@@ -2,16 +2,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.abdelrahmanayman.muslimneeds">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
+        android:roundIcon="@mipmap/logo_launcher_round"
+        android:supportsRtl="false"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".MainMenu.SalahMenu" />
         <activity android:name=".MainMenu.TaharaMenu" />
         <activity android:name=".MainMenu.AzkarMenu" />
@@ -19,14 +20,28 @@
         <activity android:name=".TaharaContent.TaharaContent.Wdo2Details" />
         <activity android:name=".NavigationContent.Settings" />
         <activity android:name=".TaharaContent.TaharaContent.GhoslDetails" />
-        <activity android:name=".SplashScreen">
+        <activity
+            android:name=".SplashScreen"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PrayerTimesContent.PrayerTimes"></activity>
+        <activity android:name=".PrayerTimesContent.PrayerTimes" />
+
+        <receiver
+            android:name=".PrayerTimesContent.AlarmReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.abdelrahmanayman.MuslimNeeds.startAzan" />
+            </intent-filter>
+        </receiver>
+
+
+        <activity android:name=".PrayerTimesContent.AzanBackground"></activity>
     </application>
 
 </manifest>

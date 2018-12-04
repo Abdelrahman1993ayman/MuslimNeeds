@@ -4,23 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/appbackground"
     tools:context=".MainMenu.TaharaMenu">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_margin="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.136">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -29,102 +26,49 @@
 
             <android.support.v7.widget.CardView
 
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginBottom="8dp">
+                style="@style/customCardView">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:background="@color/colorAccent"
-                    android:layout_margin="5dp">
+                <LinearLayout style="@style/CustomLinearLayoutMainMenu">
 
                     <TextView
                         android:id="@+id/textView2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:background="@color/colorAccent"
-                        android:padding="5dp"
-                        android:text="@string/el7adasEl2sghr"
-                        android:textColor="@color/white"
-                        android:textSize="30sp"
-                        />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:background="@android:color/white" />
+                        style="@style/CustomTextView"
+                        android:text="@string/el7adasEl2sghr" />
+
+                    <View style="@style/CustomLine" />
 
                     <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="60dp"
-                        android:layout_gravity="center"
-                        android:layout_marginBottom="10dp"
+                        style="@style/customButton"
                         android:background="@drawable/round_button"
                         android:onClick="wdo2Details"
-                        android:text="@string/elwdo2"
-                        android:textSize="30sp"
-                        android:textStyle="bold"
-                        android:textColor="#000000"
-                        android:padding="10dp"
-                        android:layout_margin="5dp"/>
+                        android:text="@string/elwdo2" />
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
-            <android.support.v7.widget.CardView
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginBottom="8dp"
-                >
+            <android.support.v7.widget.CardView style="@style/customCardView">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
+                    android:layout_margin="5dp"
                     android:background="@color/colorAccent"
-                    android:layout_margin="5dp">
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/textView3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:background="@color/colorAccent"
-                        android:padding="5dp"
-                        android:text="@string/el7adasEl2akbar"
-                        android:textColor="@color/white"
-                        android:textSize="30sp" />
+                        style="@style/CustomTextView"
+                        android:text="@string/el7adasEl2akbar" />
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
                         android:background="@android:color/white" />
+
                     <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="60dp"
-                        android:layout_gravity="center"
-                        android:layout_marginBottom="10dp"
+                        style="@style/customButton"
                         android:background="@drawable/round_button"
                         android:onClick="ghoslDetails"
-                        android:text="@string/elghosl"
-                        android:textSize="30sp"
-                        android:textStyle="bold"
-                        android:textColor="#000000"
-                        android:padding="10dp"
-                        android:layout_margin="5dp"/>
+                        android:text="@string/elghosl" />
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 

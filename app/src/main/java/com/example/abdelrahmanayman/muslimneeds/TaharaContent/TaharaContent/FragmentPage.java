@@ -35,6 +35,5 @@ public class FragmentPage extends Fragment {
             image.setImageBitmap(model.getImage());
         }
         return view;
-
     }
 }

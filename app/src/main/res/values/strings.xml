@@ -34,12 +34,6 @@
     <string name="about">عن البرنامج</string>
     <string name="settings">الاعدادات</string>
     <string name="ghosldtails">تنوى الغسل فتسمى و تغسل كفيك ثلاثا ثم تغسل فرجك بيدك اليسرى .. بعد ذلك تغسل كفيك مرة أخرى و تتوضأ .. ثم تفرغ الماء على رأسك ثلاث مرات و تتأكد من وصول الماء الى منابت الشعر .. ثم تغسل سائر جسمك مبتدأ بالجانب الأيمن ثم الأيسر مع ملاحظة ايصال الماء الى كافة انحاء الجسم و تختتم الغسل بغسل القدمين .</string>
-    <string name="ShrotElsalah">شروط الصلاة</string>
-    <string name="SefatElsalah">صفة الصلاة</string>
-    <string name="Elfra2d">الفرائض</string>
-    <string name="AwqatElsalah">أوقات الصلاة</string>
-    <string name="ElsonanWElnwafl">السنن و النوافل</string>
-    <string name="Elgom3a">الحمعة</string>
     <string name="prayerTimes">مواقيت الصلاة</string>
     <string name="elisha">العشاء</string>
     <string name="elmaghrib">المغرب</string>
@@ -53,5 +47,7 @@
     <string name="searchLocation">بحث الموقع</string>
     <string name="shareApp">شارك التطبيق</string>
     <string name="rateUs">قيم التطبيق</string>
-
+    <string name="apiKey">9ec13fa86a217fa856b16863a4ebab36</string>
+    <string name="azan">الأذان</string>
+    <string name="lang">اللغة</string>
 </resources>
